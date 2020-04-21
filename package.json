@@ -1,0 +1,27 @@
+{
+  "name": "kundelik-chat-bot",
+  "version": "0.0.0",
+  "description": "Kundelik.kz chat bot for Telegram",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kekland/kundelik-chat-bot.git"
+  },
+  "keywords": [
+    "kundelik.kz",
+    "telegram",
+    "bot"
+  ],
+  "author": "kekland <kk.erzhan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kekland/kundelik-chat-bot/issues"
+  },
+  "homepage": "https://github.com/kekland/kundelik-chat-bot#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
