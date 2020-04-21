@@ -27,10 +27,10 @@ const api = {
     }
   },
   getActiveSchool: async (accessToken) => {
-    const schools = await api.getSchools(accessToken)
+    const { schools } = await api.getSchools(accessToken)
 
     if (schools.length === 1)
-      return schools[0]
+      return { id: schools[0] }
     else
       throw new Error('Multiple schools present or none exists')
   },
@@ -52,7 +52,7 @@ const api = {
     const group = activeGroups[0]
 
     return {
-      id: group.id,
+      id: group.id_str,
       name: group.fullName,
       timetableId: group.timetable,
       subjects: group.subjects,
